@@ -60,11 +60,36 @@ see [row to create FastApi](https://github.com/ricardodarocha/Python/main/FastAp
 
 # Log
 
-In this example I explore the funcionalities of LOG, and how to show into console.
-It's a continuation of example 3_api
+Loggin is very usefull Skill for any language  
+Let's check our software and helps the user to understing when somthing was wrong  
+```python
+import logging
 
----
+logging.debug('Hello, the program has started...')
+logging.info('Info message')
+logging.warning('Warning message')
+logging.error('Error message')
+logging.critical('Critical message')
+```
 
+Check an [**most explained example**](https://machinelearningmastery.com/logging-in-python/)
+
+# A cool progress bar 
+
+Thats library show us why python is a cool language  
+```python
+from time import sleep
+from tqdm import tqdm
+
+for n in tqdm(range(100)):
+  sleep(1)
+```
+
+this is the result
+```bash
+
+▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 20% 
+```
 # Sumary by Subject
 
 The examples by subject are in \General Folder
