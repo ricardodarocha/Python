@@ -90,6 +90,9 @@ this is the result
 
 20%| ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 
 ```
+
+The [complete doc](https://github.com/tqdm/tqdm)
+
 # Sumary by Subject
 
 The examples by subject are in \General Folder
