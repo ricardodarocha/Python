@@ -88,7 +88,7 @@ for n in tqdm(range(100)):
 this is the result
 ```bash
 
-▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 20% 
+20%| ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 
 ```
 # Sumary by Subject
 
