@@ -14,7 +14,7 @@ Se você não tem conhecimento de qualquer linguagem de programação, não se p
 
 # Intro
 
-Você pode facilmente aprender **Python** na internet, lendo [livros de Python]([https://livro.rustbr.org/](https://blog.geekhunter.com.br/10-livros-de-python-que-todo-dev-especialista-deve-ler/)) , ou acessando a [Documentação](https://docs.python.org/3/))  
+Você pode facilmente aprender **Python** na internet, lendo [livros de Python]([https://livro.rustbr.org/](https://blog.geekhunter.com.br/10-livros-de-python-que-todo-dev-especialista-deve-ler/) , ou acessando a [Documentação](https://docs.python.org/3/)  
 Se você possui domínio básico de inglês, Eu recomendo fortemente que você siga este [blog de Python](https://realpython.com/)
 
 
