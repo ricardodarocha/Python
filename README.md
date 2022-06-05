@@ -154,8 +154,8 @@ Da mesma forma é necessário ler os dados gravados, ou então em alguns casos v
 
 Há duas formas principais de ler estes arquivos, que eu divido em 
 
-  [Ler um arquivo simples]() A maneir mais prática mas nem sempre resolve.  
-  [Ler um arquivo grande no formato de stream]() Esta maneira poderoso permite gerenciar o uso de memória e ler arquivos gigantes. 
+  🚧 [Ler um arquivo simples]() A maneir mais prática mas nem sempre resolve.  
+  🚧 [Ler um arquivo grande no formato de stream]() Esta maneira poderoso permite gerenciar o uso de memória e ler arquivos gigantes. 
   
 Veja este exemplo básico
 
@@ -272,11 +272,11 @@ Aprenda o estado da arte com [ARGPARSE](https://realpython.com/command-line-inte
 
 Aqui nós experimentamos algums recursos básicos de interface. Mesmo utilizando CLI é possível criar boas interfaces. Em seguida avanço um pouco mais criando interfaces "bonitas" com TUI que são interfaces visuais usando ASCII (exclusivo para terminais e aplicações de linhas de comando).
 
-Se pretende criar interfaces mais avançadas como UI do Sistema operacional como Janelas do Windows, componentes Nativos eu também tenho este estudo. [Interfaces Nativas com Python]()
+Se pretende criar interfaces mais avançadas como UI do Sistema operacional como Janelas do Windows, componentes Nativos eu também tenho este estudo. 🚧 [Interfaces Nativas com Python]()
 
-Também estou desenvolvendo este material sobre o Estado da Arte das Interfaces com Python e componentes Web com [Interfaces com Python - Estado da Arte]()
+Também estou desenvolvendo este material sobre o Estado da Arte das Interfaces com Python e componentes Web com 🚧 [Interfaces com Python - Estado da Arte]()
 
-Se você tem interesse por games dê uma olhada nestes [Experimentos com Python - Games]()
+Se você tem interesse por games dê uma olhada nestes 🚧 [Experimentos com Python - Games]()
 
 # Coletâneas
 
@@ -397,7 +397,7 @@ conn.close()
 
 Nesta seção eu dedico uma parte especial ao SQLite.
 Em seguida eu recomendo você experimentar um banco de dados Profissional que suporta grande volume de dados como Postgresql
-[Trabalhando com Banco de Dados]
+🚧 [Trabalhando com Banco de Dados]
 
 Neste diretório eu reúno um estudo completo de SQL com Python, incluindo discutindo alguns fundamentos de SQL [SQL completo com Python]
 
@@ -418,9 +418,9 @@ veja este [tutorial avançado de log](https://docs.python.org/pt-br/dev/howto/lo
 
 Eu recomendo acompanhar a minha trilha de FastApi com Pythn
 
-# A cool progress bar 
+# Uma barra de progressos legal
 
-Thats library show us why python is a cool language  
+Esta lib `tqdm` nos dá uma boa amostra do quanto Python é legal
 ```python
 from time import sleep
 from tqdm import tqdm
@@ -429,95 +429,105 @@ for n in tqdm(range(100)):
   sleep(1)
 ```
 
-this is the result
+Esta simples linha de código nos dá uma barra de progresso bem legal para visualizar como anda o nosso processo.
+Pense num processo demorado, esta lib irá criar um feedeback para o usuário em tempo real, sem muito esforço.
 ```bash
 
 20%| ▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 
 ```
 
-The [complete doc](https://github.com/tqdm/tqdm)
+Acesse a [documentação completa](https://github.com/tqdm/tqdm)
 
-# Sumary by Subject
+# Índice por assunto
 
 The examples by subject are in \General Folder
 
-## Variables
+# Glossário Sintático
 
-You can declare variables just write the name of variable following symbol '=' and the value
+Os recursos sintáticos da linguagem
+
+## Variáveis
+
+As variáveis são declaradas com qualquer nome seguidos do símbolo `=` igual e o valor.
 ```Python
 name = 'Ricardo'
 email = 'ricardodarocha@outlook.com'
 ```
-## Types
+## Tipos
 
-Variable in Python are not typed, that means the compiler infer the type of variable on run time.
+O tipo da variável é inferido em _runtime_ (em tempo de execução) de acordo com o valor que foi atribuído. Portanto o Python é uma linguagem _fracamente tipada_
 
 ```Python
-number = 1 #Number is a integer number
-number = '1' #Now, number is a string
+number = 1 # O número é inteiro
+number = '1' # Agora o número é string
 ```
 
-## Modules
+Portanto tome cuidado com os nomes das variáveis, pois o seu tipo pode mudar.
+
+## Módulos
+
+Módulos são formas de criar programas em arquivos separados para que possam ser reaproveitados ou chamados de diversos outros lugares. Isto permite centralizar a sua regra de negócios e facilita o trabalho de dar manutenção no código.
 
 ```Python
 from module import some
 ```
 
-## Loop expressions
+## Looping - Estruturas de repetição
 
-Loop is very fun in python  
-Take some examples  
+Repetições são bem legais em Python  
+Veja os exemplos:
 
 ```python
-for x in range(10){ // starts with 0, 10 is not inclusive
+for x in range(10){ // range(10) gera uma lista que vai de 0..9 , 10 não é incluído
       if x%2==0
-         print!(f"{x} is even")}
+         print!(f"{x} é par")}
       if x==5:
          continue;
       print(f"{x}")
       
       if x==5:
-         return x //If is a function, returns x
+         return x //Retorna o valor de x
 ```
 
-Loops in details [](https://github.com/ricardodarocha/Python/blob/main/general/loopExpressions)
+🚧 [Veja loop em detalhes](https://github.com/ricardodarocha/Python/blob/main/general/loopExpressions)
 
-## Error Handling
+## Manipulação de Erros
 
 ```Python
 while True:
      try:
-         x = int(input("Please enter a number: "))
+         x = int(input("Digite um número: "))
          break
+         
+     ### Manipulando erros conhecidos    
      except ValueError:
-         print("Oops!  That was no valid number.  Try again...")
-     except:
-     # If not ValueError, then is a not mapped error kind, I mean an unknown error
-         print("Oops!  Unknown Error")
+         print("Oops!  Este não é um número.  Tente novamente...")
+         
+     ### Manipulando outros erros
+     except: 
+         print("Oops!  Erro desconhecido")
 ```
 
-Check [erro handling](https://docs.python.org/3/tutorial/errors.html docs
+Veja em detalhes 🚧 [manipulação de erros](https://docs.python.org/3/tutorial/errors.html docs
 
-## Writing documentations
+## Escrevendo documentação
 
 Python has full support on docstrings. Docstrings are commets in code you can write to make your code most readable for third consumers and colabs.
 
 All about documentations  
-See this Topic [here](https://realpython.com/documenting-python-code/)
+Veja este [tópico](https://realpython.com/documenting-python-code/) (em inglês)
 
-## Writing  Tests
+## Escrevendo testes
 
-Tests are the heart of some software architecture, like TDD  
-To write tests you can do something like 
+Testes são o coração de algumas arquiteturas de _software_, como **TDD**  
+Para escrever testes você pode fazer algo parecido com isso  
 
 ```Python
 assert sum([1, 2, 3]) == 6, "Should be 6"
 ```
 
-Check [testing](https://realpython.com/python-testing/)
+Veja [testing](https://realpython.com/python-testing/) (em inglês)
 
-That prevines somebody tho change the values of array without checking it's can be changed
+Isto irá impedir que alguém altere o valor do array sem verificar se de fato ele poderá ser mudado sem quebrar o código legado
 
-# Links
 
-**Realç Python** [testing](https://realpython.com/
