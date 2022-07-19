@@ -10,7 +10,11 @@ Aos poucos, está se tornando um guia para outras pessoas que querem aprender Py
 
 # Prefácio
 
-Se você não tem conhecimento de qualquer linguagem de programação, não se preocupe. Eu recomendo que Python seja sua primeira linguagem de progamação. Sem dúvidas este é um ótimo começo. Você pode por exemplo acompanhar meus exercícios no Jupyter Notebook 
+A maneira mais simples de começar a programar é utilizando o [Jupyter Notebooks](https://jupyter.org/). Dá uma espiada, tente instalar e comece a brincar.  
+
+Se você não tem conhecimento de qualquer linguagem de programação, não se preocupe. Eu recomendo que Python seja sua primeira linguagem de progamação. Sem dúvidas este é um ótimo começo. Você pode por exemplo acompanhar meus exercícios no Jupyter Notebook 🚧 **Em construção** 
+
+Você poderá acompanhar este guia e ir criando seus próprios exercícios, as dúvidas voce pode contar comigo no email. ricardodarocha@outlook.com
 
 # Intro
 
@@ -23,6 +27,8 @@ Se você possui domínio básico de inglês, Eu recomendo fortemente que você s
 Para exercitar você precisa configurar um ambiente, seja na internet ou no seu computador  
 Eu vou ensinar duas formas de configura ambientes, uma através do Jupyter Notebooks, que é mais recomendável para quem está aprendendo Python ou para quem tem interesse em utilizar Python para fins científicos. Ambos estes ambinetes funcionam tanto na nuvem quanto na sua máquina local
 [Diversas formas de configurar um ambiente Python]()
+
+Ou se preferir utilize o [Jupyter Notebooks](https://jupyter.org/)
 
 # Olá Mundo
 
